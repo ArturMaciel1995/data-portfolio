@@ -34,4 +34,18 @@ ORDER BY
 	c.CustomerId;
 
 
-    
+-- SELF JOIN Example
+-- Description: Retrieve employees with their respective managers
+-- using a hierarchical self-referencing employee table.
+-- Note: This example uses a fictional employee table created
+-- for demonstration purposes.
+
+SELECT 
+	e.FirstName || ' ' || e.LastName AS EmployeeName, 
+	e.Position, 
+	m.FirstName || ' ' || m.LastName As ManagerName
+FROM employee AS e
+LEFT JOIN employee AS m
+	ON e.ManagerId = m.EmployeeId
+ORDER BY
+	e.EmployeeId;
