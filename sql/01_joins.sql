@@ -26,7 +26,7 @@ SELECT
 	c.CustomerId,
 	c.FirstName || ' ' || c.LastName AS CustomerName,
 	i.InvoiceId,
-	Date(i.InvoiceDate) AS InvoiceDateOnly
+	DATE(i.InvoiceDate) AS InvoiceDateOnly
 FROM Customer AS c
 LEFT JOIN Invoice AS i
 	ON c.CustomerId = i.CustomerId
@@ -43,7 +43,7 @@ ORDER BY
 SELECT 
 	e.FirstName || ' ' || e.LastName AS EmployeeName, 
 	e.Position, 
-	m.FirstName || ' ' || m.LastName As ManagerName
+	m.FirstName || ' ' || m.LastName AS ManagerName
 FROM employee AS e
 LEFT JOIN employee AS m
 	ON e.ManagerId = m.EmployeeId
