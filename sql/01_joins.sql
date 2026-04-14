@@ -18,7 +18,7 @@ ORDER BY
 	il.Quantity DESC;
 
 
-    -- LEFT JOIN Example
+-- LEFT JOIN Example
 -- Description: Retrieve all customers including those without invoices,
 -- displaying invoice date formatted as date only.
 
