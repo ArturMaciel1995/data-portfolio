@@ -49,3 +49,8 @@ LEFT JOIN employee AS m
 	ON e.ManagerId = m.EmployeeId
 ORDER BY
 	e.EmployeeId;
+
+
+-- Note:
+-- SQLite does not natively support RIGHT JOIN or FULL OUTER JOIN.
+-- Therefore, these join types are not included in this file.
