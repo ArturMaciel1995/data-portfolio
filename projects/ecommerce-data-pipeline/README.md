@@ -1,23 +1,61 @@
 # Ecommerce Data Pipeline
 
-This project is part of my journey to become a Data Engineer.
+End-to-end data pipeline built using the Brazilian Olist dataset.
 
-The goal is to build a complete data pipeline using the Olist dataset, including data cleaning, transformation, and loading into a relational database.
+The project simulates a real-world data engineering workflow, including data extraction, transformation, modeling, and loading into a relational database.
+
+---
 
 ## Technologies
 
 * Python (pandas)
 * PostgreSQL
+* SQL
+* Git
 
-## What I've done so far
+---
 
-* Built a cities dimension table
-* Cleaned and standardized data
-* Removed duplicates
-* Created surrogate keys
+## Data Pipeline Overview
 
-## Next steps
-
-* Build customers table with city relationship
+* Extract data from raw CSV files
+* Transform and clean data using pandas
+* Standardize city and state values
+* Remove duplicates
+* Create surrogate keys
+* Build dimensional tables
 * Load data into PostgreSQL
-* Continue pipeline development
+
+---
+
+## Data Modeling
+
+### Dimension: Cities
+
+* Unique list of cities and states
+* Surrogate key (`city_sk`)
+
+### Dimension: Customers
+
+* Customer identifiers
+* Relationship with cities via `city_sk`
+* Data validation to ensure referential integrity
+
+---
+
+## Project Structure
+
+```
+src/
+  transform/
+  load/
+
+data/
+  raw/
+  processed/
+```
+
+---
+
+## Status
+
+In progress — currently building additional tables (orders, order_items) to complete the pipeline.
