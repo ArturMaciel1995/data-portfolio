@@ -2,39 +2,63 @@
 
 Portfolio documenting my transition into Data Engineering through practical projects, technical studies, and real-world problem solving.
 
-## Professional Background
+## About Me
 
-Technical Support Analyst with hands-on experience supporting ERP systems, troubleshooting complex business process issues, analyzing transactional data, and working closely with database queries and business rules in production environments.
+Technical Support Analyst with experience supporting ERP systems, troubleshooting business processes, and working directly with production data.
 
-Throughout my career, I have developed strong analytical and technical skills by investigating system behaviors, validating data consistency, supporting operational workflows, and translating business requirements into technical solutions.
+Throughout my career, I developed strong analytical skills by investigating system behavior, validating data consistency, and translating business rules into technical solutions.
 
-Currently focused on transitioning into Data Engineering by building expertise in data pipelines, ETL/ELT processes, SQL, Python, and data architecture.
+Currently transitioning into Data Engineering, focusing on building data pipelines, data modeling, and working with structured datasets in real-world scenarios.
 
-## Core Skills
+---
 
-* SQL Query Development
-* Data Analysis & Validation
-* Business Rule Mapping
-* ERP Process Troubleshooting
-* Python for Data Processing
-* ETL / ELT Concepts
-* Data Modeling Fundamentals
-* Git / GitHub Version Control
+## Main Project
+
+### Ecommerce Data Pipeline
+
+End-to-end data pipeline built using the Brazilian Olist dataset.
+
+**What was implemented:**
+
+* Data extraction from raw CSV files
+* Data transformation using pandas
+* Creation of dimensional tables (cities, customers)
+* Surrogate keys and foreign key relationships
+* Data quality validation checks
+* Loading data into PostgreSQL
+
+**Tech stack:**
+
+* Python (pandas)
+* SQL
+* PostgreSQL
+* Git
+
+---
 
 ## Repository Structure
 
-### /sql
-
-Advanced SQL studies, query optimization, and business scenario exercises.
-
-### /python
-
-Automation scripts, data manipulation, and backend integrations.
-
 ### /projects
 
-End-to-end projects simulating real-world data engineering workflows.
+End-to-end data engineering projects simulating real-world pipelines.
+
+### /sql
+
+SQL exercises, query optimization, and analytical scenarios.
+
+---
+
+## Skills
+
+* SQL Query Development
+* Data Modeling (Dimensional)
+* ETL / ELT Processes
+* Data Cleaning & Transformation (pandas)
+* Data Validation & Quality Checks
+* Git / GitHub
+
+---
 
 ## Career Objective
 
-Leverage my technical support and business systems background to build scalable data solutions and transition into a Data Engineering role.
+Leverage my background in technical support and business systems to design and build scalable data pipelines, transitioning into a Data Engineering role.
