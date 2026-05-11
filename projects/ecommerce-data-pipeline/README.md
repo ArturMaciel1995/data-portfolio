@@ -1,8 +1,8 @@
 # Ecommerce Data Pipeline
 
-End-to-end data pipeline built using the Brazilian Olist dataset.
+End-to-end data engineering and analytics project built using the Brazilian Olist e-commerce dataset.
 
-The project simulates a real-world data engineering workflow, including data extraction, transformation, modeling, and loading into a relational database.
+This project simulates a real-world analytical data workflow, including ETL pipelines, dimensional modeling, surrogate key generation, data quality validation, and loading data into a PostgreSQL data warehouse.
 
 ---
 
@@ -11,51 +11,103 @@ The project simulates a real-world data engineering workflow, including data ext
 * Python (pandas)
 * PostgreSQL
 * SQL
-* Git
+* SQLAlchemy
+* Git / GitHub
+* Power BI
 
 ---
 
 ## Data Pipeline Overview
 
-* Extract data from raw CSV files
+* Extract data from raw CSV datasets
 * Transform and clean data using pandas
-* Standardize city and state values
-* Remove duplicates
-* Create surrogate keys
-* Build dimensional tables
-* Load data into PostgreSQL
+* Standardize categorical and location fields
+* Remove duplicates and validate relationships
+* Generate surrogate keys
+* Build dimensional and fact tables
+* Create Star Schema relationships
+* Load analytical datasets into PostgreSQL
+* Prepare datasets for Power BI analytics
 
 ---
 
-## Data Modeling
+## Current Dimensional Model
 
-### Dimension: Cities
+### Dimensions
 
-* Unique list of cities and states
+#### Cities
+
+* Unique city and state records
 * Surrogate key (`city_sk`)
 
-### Dimension: Customers
+#### Customers
 
 * Customer identifiers
 * Relationship with cities via `city_sk`
-* Data validation to ensure referential integrity
+
+#### Products
+
+* Product category and physical attributes
+* Product dimensions and weight information
+
+#### Sellers
+
+* Seller location information
+* Seller city, state, and zip code
+
+#### Orders
+
+* Order status and purchase timestamps
+* Relationship with customers
+
+---
+
+### Fact Table
+
+#### Order Items
+
+* Product-level order transactions
+* Relationships with orders, products, and sellers
+* Metrics:
+
+  * Product price
+  * Freight value
+
+---
+
+## Data Quality & Validation
+
+Implemented validation checks to ensure:
+
+* Referential integrity between dimensions and fact tables
+* Non-null surrogate keys after merges
+* Consistent dimensional relationships
+* Standardized categorical values
 
 ---
 
 ## Project Structure
 
-```
+```text
 src/
-  transform/
-  load/
+ ├── transform/
+ └── load/
 
 data/
-  raw/
-  processed/
+ ├── raw/
+ └── processed/
 ```
 
 ---
 
-## Status
+## Current Status
 
-In progress — currently building additional tables (orders, order_items) to complete the pipeline.
+In active development.
+
+Next steps include:
+
+* Power BI dashboards
+* Analytical SQL queries
+* KPI development
+* Data model visualization
+* Additional business metrics and analytics
