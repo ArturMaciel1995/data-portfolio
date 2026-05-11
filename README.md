@@ -1,18 +1,25 @@
-# Data Engineering Portfolio
+# Data Engineering & Analytics Portfolio
 
-Portfolio documenting my transition into Data Engineering through practical projects, technical studies, and real-world problem solving.
+Portfolio focused on Data Engineering, Data Analytics, and Business Intelligence projects built with real-world datasets and modern data workflows.
 
 ## About Me
 
-Technical Support Analyst with experience supporting ERP systems, troubleshooting business processes, and working directly with production data.
+Data Analyst and aspiring Data Engineer focused on building scalable data pipelines, dimensional models, analytical datasets, and business intelligence solutions.
 
-Throughout my career, I developed strong analytical skills by investigating system behavior, validating data consistency, and translating business rules into technical solutions.
+Currently developing practical projects involving:
 
-Currently transitioning into Data Engineering, focusing on building data pipelines, data modeling, and working with structured datasets in real-world scenarios.
+* SQL
+* Python
+* PostgreSQL
+* ETL / ELT Pipelines
+* Data Modeling
+* Data Warehousing
+* Power BI
+* Data Analytics
 
 ---
 
-## Main Project
+## 🚀 Main Project
 
 ### Ecommerce Data Pipeline
 
@@ -22,17 +29,31 @@ End-to-end data pipeline built using the Brazilian Olist dataset.
 
 * Data extraction from raw CSV files
 * Data transformation using pandas
-* Creation of dimensional tables (cities, customers)
-* Surrogate keys and foreign key relationships
+* Creation of dimensional tables
+* Fact and dimension relationships
+* Star Schema modeling
+* Surrogate keys and foreign keys
 * Data quality validation checks
 * Loading data into PostgreSQL
+* Analytics-ready datasets for Power BI
+
+**Current dimensional model includes:**
+
+* Cities Dimension
+* Customers Dimension
+* Products Dimension
+* Sellers Dimension
+* Orders Dimension
+* Order Items Fact Table
 
 **Tech stack:**
 
 * Python (pandas)
 * SQL
 * PostgreSQL
-* Git
+* SQLAlchemy
+* Git / GitHub
+* Power BI
 
 ---
 
@@ -40,25 +61,30 @@ End-to-end data pipeline built using the Brazilian Olist dataset.
 
 ### /projects
 
-End-to-end data engineering projects simulating real-world pipelines.
+End-to-end data engineering and analytics projects simulating real-world data workflows.
 
 ### /sql
 
-SQL exercises, query optimization, and analytical scenarios.
+SQL studies, analytical queries, optimization techniques, and business scenarios.
 
 ---
 
 ## Skills
 
 * SQL Query Development
-* Data Modeling (Dimensional)
-* ETL / ELT Processes
-* Data Cleaning & Transformation (pandas)
-* Data Validation & Quality Checks
+* Python for Data Processing
+* ETL / ELT Pipelines
+* Dimensional Modeling
+* Star Schema Design
+* Data Warehousing
+* Data Cleaning & Transformation
+* Data Quality Validation
+* PostgreSQL
+* Power BI
 * Git / GitHub
 
 ---
 
 ## Career Objective
 
-Leverage my background in technical support and business systems to design and build scalable data pipelines, transitioning into a Data Engineering role.
+Build scalable data solutions and analytical environments combining data engineering, analytics, and business intelligence practices.
