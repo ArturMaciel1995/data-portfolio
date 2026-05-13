@@ -1,43 +1,48 @@
 # Data Engineering & Analytics Portfolio
 
-Portfolio focused on Data Engineering, Data Analytics, and Business Intelligence projects built with real-world datasets and modern data workflows.
-
-## About Me
-
-Data Analyst and aspiring Data Engineer focused on building scalable data pipelines, dimensional models, analytical datasets, and business intelligence solutions.
-
-Currently developing practical projects involving:
-
-* SQL
-* Python
-* PostgreSQL
-* ETL / ELT Pipelines
-* Data Modeling
-* Data Warehousing
-* Power BI
-* Data Analytics
+Portfolio focused on Data Engineering, Data Analytics, and Business Intelligence projects built using real-world datasets and modern analytical workflows.
 
 ---
 
-## 🚀 Main Project
+## About Me
 
-### Ecommerce Data Pipeline
+Data Analyst focused on building analytical solutions, dimensional data models, ETL pipelines, and business intelligence dashboards using SQL, Python, PostgreSQL, and Power BI.
 
-End-to-end data pipeline built using the Brazilian Olist dataset.
+Currently developing practical projects involving:
 
-**What was implemented:**
+* SQL Analytics
+* Python Data Processing
+* PostgreSQL
+* ETL / ELT Pipelines
+* Dimensional Modeling
+* Data Warehousing
+* Power BI Dashboards
+* Business Intelligence
+* Data Visualization
 
-* Data extraction from raw CSV files
+---
+
+# 🚀 Featured Project
+
+## Ecommerce Data Pipeline & Sales Analytics
+
+End-to-end data engineering and business intelligence project built using the Brazilian Olist e-commerce dataset.
+
+The project simulates a real-world analytical workflow including ETL processing, dimensional modeling, PostgreSQL data warehousing, and Power BI dashboard development.
+
+### Project Highlights
+
+* Data extraction from raw CSV datasets
 * Data transformation using pandas
-* Creation of dimensional tables
-* Fact and dimension relationships
-* Star Schema modeling
-* Surrogate keys and foreign keys
-* Data quality validation checks
-* Loading data into PostgreSQL
-* Analytics-ready datasets for Power BI
+* Dimensional and fact table creation
+* Star/Snowflake schema modeling
+* Surrogate key generation
+* Referential integrity validation
+* PostgreSQL analytical database loading
+* Interactive Power BI dashboard
+* KPI and DAX measure development
 
-**Current dimensional model includes:**
+### Dimensional Model
 
 * Cities Dimension
 * Customers Dimension
@@ -46,14 +51,21 @@ End-to-end data pipeline built using the Brazilian Olist dataset.
 * Orders Dimension
 * Order Items Fact Table
 
-**Tech stack:**
+### Tech Stack
 
 * Python (pandas)
 * SQL
 * PostgreSQL
 * SQLAlchemy
-* Git / GitHub
 * Power BI
+* DAX
+* Git / GitHub
+
+### Dashboard Preview
+
+![Dashboard Preview](https://raw.githubusercontent.com/ArturMaciel1995/data-portfolio/main/projects/ecommerce-data-pipeline/reports/dashboard/screenshots/executive_overview.png)
+
+👉 [Open Project](https://github.com/ArturMaciel1995/data-portfolio/tree/main/projects/ecommerce-data-pipeline)
 
 ---
 
@@ -61,30 +73,32 @@ End-to-end data pipeline built using the Brazilian Olist dataset.
 
 ### /projects
 
-End-to-end data engineering and analytics projects simulating real-world data workflows.
+End-to-end data engineering and analytics projects simulating real-world analytical workflows.
 
 ### /sql
 
-SQL studies, analytical queries, optimization techniques, and business scenarios.
+SQL studies, analytical queries, business scenarios, and data analysis exercises.
 
 ---
 
-## Skills
+## Skills Demonstrated
 
 * SQL Query Development
-* Python for Data Processing
+* Python Data Processing
 * ETL / ELT Pipelines
 * Dimensional Modeling
-* Star Schema Design
+* Star/Snowflake Schema Design
 * Data Warehousing
 * Data Cleaning & Transformation
 * Data Quality Validation
 * PostgreSQL
-* Power BI
+* Power BI Dashboard Development
+* DAX Measures and KPIs
+* Business Intelligence
 * Git / GitHub
 
 ---
 
-## Career Objective
+## Career Focus
 
-Build scalable data solutions and analytical environments combining data engineering, analytics, and business intelligence practices.
+Focused on building scalable analytical solutions combining data engineering, analytics, and business intelligence practices.
