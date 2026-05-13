@@ -1,8 +1,8 @@
-# Ecommerce Data Pipeline
+# Ecommerce Data Pipeline & Sales Analytics
 
-End-to-end data engineering and analytics project built using the Brazilian Olist e-commerce dataset.
+End-to-end data engineering and business intelligence project built using the Brazilian Olist e-commerce dataset.
 
-This project simulates a real-world analytical data workflow, including ETL pipelines, dimensional modeling, surrogate key generation, data quality validation, and loading data into a PostgreSQL data warehouse.
+This project simulates a real-world analytical workflow involving ETL processes, dimensional modeling, PostgreSQL data warehousing, and interactive dashboard development with Power BI.
 
 ---
 
@@ -12,26 +12,47 @@ This project simulates a real-world analytical data workflow, including ETL pipe
 * PostgreSQL
 * SQL
 * SQLAlchemy
-* Git / GitHub
 * Power BI
+* DAX
+* Git / GitHub
 
 ---
 
-## Data Pipeline Overview
+## Project Overview
 
-* Extract data from raw CSV datasets
-* Transform and clean data using pandas
-* Standardize categorical and location fields
-* Remove duplicates and validate relationships
-* Generate surrogate keys
-* Build dimensional and fact tables
-* Create Star Schema relationships
-* Load analytical datasets into PostgreSQL
-* Prepare datasets for Power BI analytics
+The project was designed to transform raw e-commerce transactional data into an analytics-ready environment for business intelligence and executive reporting.
+
+Main objectives include:
+
+* Building ETL pipelines using Python
+* Creating dimensional data models
+* Generating surrogate keys
+* Validating data quality and relationships
+* Loading analytical datasets into PostgreSQL
+* Developing interactive Power BI dashboards
+* Creating KPIs and business metrics
 
 ---
 
-## Current Dimensional Model
+## Data Pipeline Workflow
+
+```text
+Raw CSV Files
+      ↓
+Python Transformation Layer
+      ↓
+Data Cleaning & Validation
+      ↓
+Dimensional Modeling
+      ↓
+PostgreSQL Data Warehouse
+      ↓
+Power BI Analytics Dashboard
+```
+
+---
+
+## Dimensional Model
 
 ### Dimensions
 
@@ -43,22 +64,22 @@ This project simulates a real-world analytical data workflow, including ETL pipe
 #### Customers
 
 * Customer identifiers
-* Relationship with cities via `city_sk`
+* Geographic relationships via `city_sk`
 
 #### Products
 
-* Product category and physical attributes
-* Product dimensions and weight information
+* Product categories and attributes
+* Product dimensions and weight metrics
 
 #### Sellers
 
-* Seller location information
-* Seller city, state, and zip code
+* Seller geographic information
+* Seller city and state relationships
 
 #### Orders
 
 * Order status and purchase timestamps
-* Relationship with customers
+* Customer relationships
 
 ---
 
@@ -66,48 +87,129 @@ This project simulates a real-world analytical data workflow, including ETL pipe
 
 #### Order Items
 
-* Product-level order transactions
-* Relationships with orders, products, and sellers
-* Metrics:
+Central fact table containing transactional sales data.
 
-  * Product price
-  * Freight value
+Metrics include:
+
+* Product price
+* Freight value
+
+Relationships:
+
+* Orders
+* Products
+* Sellers
+
+---
+
+## Database Schema
+
+![Database Schema](reports/diagrams/schema.png)
+
+---
+
+## Executive Sales Dashboard
+
+Interactive Power BI dashboard focused on business performance analysis and KPI monitoring.
+
+### Dashboard Features
+
+* Revenue trend analysis
+* Regional sales analysis
+* Product category performance
+* Interactive filtering
+* KPI monitoring
+* Freight analysis
+
+### KPIs
+
+* Total Revenue
+* Total Orders
+* Average Ticket
+* Total Freight
+
+---
+
+## Dashboard Preview
+
+![Executive Overview](reports/dashboard/screenshots/executive_overview.png)
+
+---
+
+## DAX Measures
+
+### Total Revenue
+
+```DAX
+Total Revenue = SUM(order_items[price])
+```
+
+### Total Orders
+
+```DAX
+Total Orders = DISTINCTCOUNT(orders[order_id])
+```
+
+### Average Ticket
+
+```DAX
+Average Ticket = DIVIDE([Total Revenue], [Total Orders])
+```
+
+### Total Freight
+
+```DAX
+Total Freight = SUM(order_items[freight_value])
+```
 
 ---
 
 ## Data Quality & Validation
 
-Implemented validation checks to ensure:
+Validation processes implemented to ensure:
 
-* Referential integrity between dimensions and fact tables
-* Non-null surrogate keys after merges
+* Referential integrity
 * Consistent dimensional relationships
-* Standardized categorical values
+* Non-null surrogate keys
+* Clean and standardized categorical values
+* Reliable analytical datasets
 
 ---
 
 ## Project Structure
 
 ```text
-src/
- ├── transform/
- └── load/
-
-data/
- ├── raw/
- └── processed/
+projects/
+└── ecommerce-data-pipeline/
+    ├── data/
+    │   ├── raw/
+    │   └── processed/
+    │
+    ├── reports/
+    │   ├── dashboard/
+    │   │   ├── screenshots/
+    │   │   └── ecommerce_sales_dashboard.pbix
+    │   │
+    │   └── diagrams/
+    │
+    ├── src/
+    │   ├── transform/
+    │   └── load/
+    │
+    ├── README.md
+    └── requirements.txt
 ```
 
 ---
 
-## Current Status
+## Skills Demonstrated
 
-In active development.
-
-Next steps include:
-
-* Power BI dashboards
-* Analytical SQL queries
-* KPI development
-* Data model visualization
-* Additional business metrics and analytics
+* ETL pipeline development
+* Dimensional modeling
+* Star/Snowflake schema concepts
+* PostgreSQL data warehousing
+* Power BI dashboard design
+* DAX calculations and KPIs
+* SQL analytics
+* Business intelligence storytelling
+* Data visualization best practices
