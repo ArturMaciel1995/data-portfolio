@@ -50,7 +50,7 @@ Dimensional model using a Snowflake Schema approach.
 
 ## Database Schema
 
-![Database Schema](reports/diagrams/schema.png)
+![Database Schema](../diagrams/schema.png)
 
 ---
 
@@ -75,7 +75,7 @@ The dashboard was designed to provide a high-level business overview focused on:
 
 ## Dashboard Preview
 
-![Executive Overview](reports/dashboard/screenshots/executive_overview.png)
+![Executive Overview](./screenshots/executive_overview.png)
 
 ---
 
